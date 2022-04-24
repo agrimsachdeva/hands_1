@@ -5,6 +5,13 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
+  path: ''
+  label: Bucket List
+  create: all
+  match: bucket/*
+  templates:
+  - bucket-list
+- type: directory
   path: content
   label: Post
   create: documents
